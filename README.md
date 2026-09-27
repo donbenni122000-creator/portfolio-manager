@@ -22,17 +22,17 @@ I wanted to work through the full portfolio management process in one tool: unde
 
 ## Investment process
 
-```
-Client risk-return profile
-        │
-        ▼
-Target asset allocation ──► Stock research & valuation ──► Buy / Hold / Sell calls
-        │                                                        │
-        ▼                                                        ▼
-Portfolio construction ◄─────────────────────────────────────────┘
-        │
-        ▼
-Monitoring ──► Drift detected? ──► Rebalance (paper trades)
+```mermaid
+flowchart TD
+    A["Client risk-return profile"] --> B["Target asset allocation"]
+    B --> C["Stock research & valuation"]
+    C --> D["Buy / Hold / Sell calls"]
+    B --> E["Portfolio construction"]
+    D --> E
+    E --> F["Monitoring"]
+    F --> G{"Drift from target?"}
+    G -- "Yes" --> H["Rebalance with paper trades"]
+    H --> F
 ```
 
 ## Disclaimer
