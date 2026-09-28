@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redline · Portfolio Manager</title>
+  <link rel="preload" href="/static/fonts/raleway-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" href="/static/icon.ico">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/chart.umd.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="logo">◆</span> Portfolio Manager</div>
+    <nav>
+      <a href="#/" data-nav="markets">Markets</a>
+      <a href="#/watchlist" data-nav="watchlist">Watchlist</a>
+      <a href="#/news" data-nav="news">News</a>
+      <a href="#/clients" data-nav="clients">Clients</a>
+      <a href="#/new" data-nav="new">New client</a>
+      <a href="#/models" data-nav="models">Model marketplace</a>
+      <a href="#/billing" data-nav="billing">Billing</a>
+      <a href="#/research" data-nav="research">Stock research</a>
+      <a href="#/assistant" data-nav="assistant">AI Assistant <span class="ai-tag">AI</span></a>
+    </nav>
+    <div id="client-nav"></div>
+    <div class="sidebar-foot">
+      <div id="mode-badge" class="badge"></div>
+      <div class="muted small">Paper trading only — no real orders are sent.</div>
+      <button class="btn sm" id="quit-btn" style="margin-top:10px;width:100%">Quit Portfolio Manager</button>
+      <div class="muted small" id="version" style="margin-top:6px"></div>
+    </div>
+  </aside>
+  <main id="view"><div class="loading">Loading…</div></main>
+  <div id="toast"></div>
+  <script src="/static/app.js"></script>
+  <script src="/static/markets.js"></script>
+  <script src="/static/vendor/lightweight-charts.js"></script>
+  <script src="/static/prochart.js"></script>
+  <script src="/static/news.js"></script>
+  <script src="/static/frontier.js"></script>
+  <script src="/static/studio.js"></script>
+  <script src="/static/story.js"></script>
+  <script src="/static/motion.js"></script>
+  <script type="module" src="/static/scenes.js"></script>
+</body>
+</html>
