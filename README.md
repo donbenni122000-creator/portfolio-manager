@@ -1,5 +1,9 @@
 # Portfolio Management Platform
 
+> **Built by [Don Benni](https://github.com/donbenni122000-creator)** · MBA in Finance, Golden Gate University (2026) · CFA Level I Candidate
+>
+> I built this platform to run the whole portfolio management process in one tool: client risk profiling, fundamental research with DCF valuation, portfolio construction and monitoring, rebalancing and paper trading. It applies what I learned in my MBA and the CFA curriculum to a working system.
+
 A local web app for managing multiple client portfolios with paper trading.
 
 - **Risk profiling.** An 8-question questionnaire scores capacity and willingness. The result maps to one of five profiles (Conservative to Aggressive), each with its own model ETF portfolio, volatility band, drawdown tolerance and individual-stock limits.
